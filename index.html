@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="bg-dark text-white py-3" style="position: fixed; width: 100%; top: 0; z-index: 1000;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="angelo logo.png" alt="Logo" style="max-height: 50px;">
+        </div>
+        <nav class="d-none d-md-block">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">Over ons</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="menu-toggle" class="hamburger d-md-none">&#9776;</label>
+    </div>
+</header>
+
+<input type="checkbox" id="menu-toggle" hidden>
+<aside class="sidebar bg-dark text-white vh-100 position-fixed d-md-none" style="width: 250px;">
+    <nav class="pt-5">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-primary" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="#about">Over ons</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<main class="mt-5 pt-5">
+    <section id="home" class="vh-100 bg-primary text-white text-center d-flex align-items-center justify-content-center">
+        <div>
+            <img src="Veldbloem-119 (1).jpg" alt="Angelo Veldbloem" class="img-fluid mb-4" style="max-height: 300px;">
+            <h1 class="display-4">Hi There! I'm Angelo</h1>
+            <p class="lead">A System and network student at AP Hogeschool</p>
+        </div>
+    </section>
+
+    <section id="about" class="vh-100 bg-secondary text-white text-center d-flex align-items-center justify-content-center">
+        <div>
+            <h2 class="display-4">Over ons</h2>
+            <p class="lead">Mijn naam is Angelo, en ik ben student op AP Hogeschool in België en ik studeer 
+                Systeem en netwerkbeheer. Met een passie voor technologie en een sterke interesse in 
+                het beveiligen van digitale omgevingen, streef ik ernaar om een van de beste systeem en 
+                netwerker te worden.
+                Tijdens mijn studie heb ik al een solide basiskennis opgedaan in cybersecurity, wat me 
+                in staat stelt om bedreigngen en kwetsbaarheden te identificeren en te begrijpen hoe 
+                deze kunnen worden aangepakt. Daarnaast heb ik certificaten behaald in JavaScript en 
+                HTML, waarmee ik een stevige basis heb gelegd in webontwikkeling en de bijbehorende 
+                beveiligingsaspecten.
+                Naast mijn technische vaardigheden heb ik ook een creatieve kant: ik ben 
+                gepassioneerd fotograaf in mijn vrije tijd. Fotografie helpt me om mijn oog voor detail te 
+                scherpen en mijn creatieve probleemoplossende vaardigheden te versterken, wat van 
+                pas komt in zowel mijn studie als mijn toekomstige carrière in cybersecurity.
+                Ik ben vastberaden om continu te leren en mezelf te verbeteren, zodat ik in de toekomst 
+                een waardevolle bijdrage kan leveren aan de beveiliging van kritieke systemen en 
+                gegevens</p>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Angelo Veldbloem. Alle rechten voorbehouden.</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">Github</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">LinkedIn</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
