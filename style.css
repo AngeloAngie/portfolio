@@ -1,0 +1,82 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: Arial, sans-serif;
+    color: #011F39;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #074073;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Footer */
+footer {
+    background-color: #074073;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Sidebar for mobile */
+#menu-toggle {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #074073;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+}
+
+#menu-toggle:checked + .sidebar {
+    left: 0;
+}
+
+/* Main Sections */
+.section {
+    padding-top: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
