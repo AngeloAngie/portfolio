@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
 </head>
 <body>
-
-    <header class="bg-dark text-white py-3" style="position: fixed; width: 100%; top: 0; z-index: 1000;">
+    <header class="bg-dark text-white py-3 fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="images/angelo logo.png" alt="Logo" style="max-height: 50px;">
@@ -22,80 +22,88 @@
                     <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <label for="menu-toggle" class="hamburger d-md-none">&#9776;</label>
         </div>
     </header>
 
-    <input type="checkbox" id="menu-toggle" hidden>
-    <aside class="sidebar bg-dark text-white vh-100 position-fixed d-md-none" style="width: 250px;">
-        <nav class="pt-5">
-            <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link text-primary" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-primary" href="about.html">Over ons</a></li>
-                <li class="nav-item"><a class="nav-link text-primary" href="portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link text-primary" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="mt-5 pt-5">
-        <section id="portfolio" class="vh-100 bg-light text-center">
-            <div class="container py-5">
-                <h2 class="display-4 mb-4 text-primary">Projects</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/pexels-muffin-4584613.jpg" alt="Project 1" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Project 1</h5>
-                                <p class="card-text"></p>
-                            </div>
-                        </div>
+    <main class="container mt-5 pt-5">
+        <section class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <figure>
+                        <img src="images/pexels-pixabay-207580.jpg" alt="Project 1" class="card-img-top img-fluid">
+                        <figcaption>Foto door Pixabay op Pexels</figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project 1</h5>
+                        <p class="card-text">Short description of Project 1.</p>
+                        <a href="project1-detail.html" class="btn btn-primary">Bekijk details</a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/pexels-pixabay-207580.jpg" alt="Project 2" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Project 2</h5>
-                                <p class="card-text">Short description of Project 2.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <figure>
+                        <img src="images/pexels-brett-sayles-2881228.jpg" alt="Project 2" class="card-img-top img-fluid">
+                        <figcaption>Foto door Brett Sayles op Pexels</figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project 2</h5>
+                        <p class="card-text">Short description of Project 2.</p>
+                        <a href="project2-detail.html" class="btn btn-primary">Bekijk details</a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/pexels-pixabay-257736.jpg" alt="Project 3" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Project 3</h5>
-                                <p class="card-text">Short description of Project 3.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <figure>
+                        <img src="images/pexels-muffin-4584613.jpg" alt="Project 3" class="card-img-top img-fluid">
+                        <figcaption>Foto door Muffin op Pexels</figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project 3</h5>
+                        <p class="card-text">Short description of Project 3.</p>
+                        <a href="project3-detail.html" class="btn btn-primary">Bekijk details</a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/pexels-brett-sayles-2881228.jpg" alt="Project 4" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Project 4</h5>
-                                <p class="card-text">Short description of Project 4.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <figure>
+                        <img src="images/pexels-myburgh-1102797.jpg" alt="Project 4" class="card-img-top img-fluid">
+                        <figcaption>Foto door Myburgh op Pexels</figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project 4</h5>
+                        <p class="card-text">Short description of Project 4.</p>
+                        <a href="project4-detail.html" class="btn btn-primary">Bekijk details</a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/pexels-myburgh-1102797.jpg" alt="Project 5" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Scripting</h5>
-                                <p class="card-text">Short description of Project 5.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <figure>
+                        <img src="images/pexels-pixabay-257736.jpg" alt="Project 5" class="card-img-top img-fluid">
+                        <figcaption>Foto door Pixabay op Pexels</figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project 5</h5>
+                        <p class="card-text">Short description of Project 5.</p>
+                        <a href="project5-detail.html" class="btn btn-primary">Bekijk details</a>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/pexels-realtoughcandy-11034131.jpg" alt="Project 6" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Linux</h5>
-                                <p class="card-text">Short description of Project 6.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <figure>
+                        <img src="images/pexels-realtoughcandy-11034131.jpg" alt="Project 6" class="card-img-top img-fluid">
+                        <figcaption>Foto door Realtoughcandy op Pexels</figcaption>
+                    </figure>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Project 6</h5>
+                        <p class="card-text">Short description of Project 6.</p>
+                        <a href="project6-detail.html" class="btn btn-primary">Bekijk details</a>
                     </div>
                 </div>
             </div>
@@ -111,5 +119,7 @@
         </ul>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
